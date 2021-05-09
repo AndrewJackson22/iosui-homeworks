@@ -12,9 +12,10 @@
 		0D4568202648169200A99BFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D45681F2648169200A99BFF /* ViewController.swift */; };
 		0D4568252648169300A99BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4568242648169300A99BFF /* Assets.xcassets */; };
 		0D4568282648169300A99BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4568262648169300A99BFF /* LaunchScreen.storyboard */; };
-		0D456832264819FE00A99BFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D456831264819FE00A99BFF /* Main.storyboard */; };
+		0D456832264819FE00A99BFF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D456831264819FE00A99BFF /* Profile.storyboard */; };
 		0D45683D26481F4800A99BFF /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D45683C26481F4800A99BFF /* ProfileView.xib */; };
 		0D4568402648221B00A99BFF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D45683F2648221B00A99BFF /* ProfileView.swift */; };
+		0DCD471D2648480200EAFF99 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD471C2648480200EAFF99 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,10 @@
 		0D4568242648169300A99BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D4568272648169300A99BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D4568292648169300A99BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D456831264819FE00A99BFF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0D456831264819FE00A99BFF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		0D45683C26481F4800A99BFF /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		0D45683F2648221B00A99BFF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0DCD471C2648480200EAFF99 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,8 @@
 				0D45681B2648169200A99BFF /* AppDelegate.swift */,
 				0D45681D2648169200A99BFF /* SceneDelegate.swift */,
 				0D45681F2648169200A99BFF /* ViewController.swift */,
-				0D456831264819FE00A99BFF /* Main.storyboard */,
+				0D456831264819FE00A99BFF /* Profile.storyboard */,
+				0DCD471C2648480200EAFF99 /* ProfileViewController.swift */,
 				0D45683C26481F4800A99BFF /* ProfileView.xib */,
 				0D45683F2648221B00A99BFF /* ProfileView.swift */,
 				0D4568242648169300A99BFF /* Assets.xcassets */,
@@ -131,7 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D45683D26481F4800A99BFF /* ProfileView.xib in Resources */,
-				0D456832264819FE00A99BFF /* Main.storyboard in Resources */,
+				0D456832264819FE00A99BFF /* Profile.storyboard in Resources */,
 				0D4568282648169300A99BFF /* LaunchScreen.storyboard in Resources */,
 				0D4568252648169300A99BFF /* Assets.xcassets in Resources */,
 			);
@@ -146,6 +149,7 @@
 			files = (
 				0D4568402648221B00A99BFF /* ProfileView.swift in Sources */,
 				0D4568202648169200A99BFF /* ViewController.swift in Sources */,
+				0DCD471D2648480200EAFF99 /* ProfileViewController.swift in Sources */,
 				0D45681C2648169200A99BFF /* AppDelegate.swift in Sources */,
 				0D45681E2648169200A99BFF /* SceneDelegate.swift in Sources */,
 			);
