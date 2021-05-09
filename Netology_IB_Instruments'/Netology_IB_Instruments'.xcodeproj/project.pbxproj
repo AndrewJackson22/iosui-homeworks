@@ -16,6 +16,7 @@
 		0D45683D26481F4800A99BFF /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D45683C26481F4800A99BFF /* ProfileView.xib */; };
 		0D4568402648221B00A99BFF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D45683F2648221B00A99BFF /* ProfileView.swift */; };
 		0DCD471D2648480200EAFF99 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD471C2648480200EAFF99 /* ProfileViewController.swift */; };
+		0DCD472026484C1300EAFF99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD471F26484C1300EAFF99 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0D45683C26481F4800A99BFF /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		0D45683F2648221B00A99BFF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0DCD471C2648480200EAFF99 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0DCD471F26484C1300EAFF99 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				0DCD471C2648480200EAFF99 /* ProfileViewController.swift */,
 				0D45683C26481F4800A99BFF /* ProfileView.xib */,
 				0D45683F2648221B00A99BFF /* ProfileView.swift */,
+				0DCD471F26484C1300EAFF99 /* Main.storyboard */,
 				0D4568242648169300A99BFF /* Assets.xcassets */,
 				0D4568262648169300A99BFF /* LaunchScreen.storyboard */,
 				0D4568292648169300A99BFF /* Info.plist */,
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D45683D26481F4800A99BFF /* ProfileView.xib in Resources */,
+				0DCD472026484C1300EAFF99 /* Main.storyboard in Resources */,
 				0D456832264819FE00A99BFF /* Profile.storyboard in Resources */,
 				0D4568282648169300A99BFF /* LaunchScreen.storyboard in Resources */,
 				0D4568252648169300A99BFF /* Assets.xcassets in Resources */,

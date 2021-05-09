@@ -15,5 +15,4 @@ class ProfileView: UIView {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var textLabel: UITextView!
     
-    
 }
