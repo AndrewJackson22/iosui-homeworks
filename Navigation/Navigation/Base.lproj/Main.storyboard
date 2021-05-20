@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,9 +53,9 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Lenta" id="hFZ-Jx-d8l">
-                        <barButtonItem key="rightBarButtonItem" title="Post" image="link" catalog="system" id="y7t-0U-Uf2">
+                        <barButtonItem key="rightBarButtonItem" title="Tap" id="A7A-Ll-SIM">
                             <connections>
-                                <segue destination="2Pb-cm-c81" kind="show" identifier="post" id="wtd-Ev-urB"/>
+                                <segue destination="zkv-RQ-gaL" kind="show" identifier="post" id="NVE-Jf-apY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -64,24 +65,68 @@
             </objects>
             <point key="canvasLocation" x="-2952.1739130434785" y="-786.16071428571422"/>
         </scene>
-        <!--Post View Controller-->
-        <scene sceneID="WZd-0k-kAj">
+        <!--Post-->
+        <scene sceneID="unt-dw-kS6">
             <objects>
-                <viewController id="2Pb-cm-c81" customClass="PostViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yE8-tg-FNS">
+                <viewController title="Post" id="zkv-RQ-gaL" customClass="PostViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ng-Hr-0vk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="o9H-Fb-2UR"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <viewLayoutGuide key="safeArea" id="g2B-MR-VrL"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lrp-5K-cCh"/>
-                    <connections>
-                        <outlet property="newPost" destination="yE8-tg-FNS" id="1U5-cC-9PL"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Post" id="v8T-ZA-UF5">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="L8l-Cd-RbM">
+                            <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="medium" renderingMode="original"/>
+                            <connections>
+                                <segue destination="UhE-cJ-X8Y" kind="presentation" id="xzD-v8-RJP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FtK-l0-U2T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wre-I2-ve9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2005" y="-786"/>
+            <point key="canvasLocation" x="-2110.144927536232" y="-786.16071428571422"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="IAh-X6-AU4">
+            <objects>
+                <viewController id="UhE-cJ-X8Y" customClass="InfoViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WmV-0p-SN2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDu-Ks-QO9">
+                                <rect key="frame" x="184" y="406" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="alertAction:" destination="UhE-cJ-X8Y" eventType="touchUpInside" id="bsW-S6-2Ax"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rcy-4X-V6p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S77-DF-CJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1375.3623188405797" y="-772.09821428571422"/>
+        </scene>
+        <!--Allert View Controller-->
+        <scene sceneID="oWJ-xY-PUU">
+            <objects>
+                <viewController id="WNZ-rb-FTT" customClass="UIAllertViewController" customModule="Navigation" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q69-cl-hpU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RNR-8b-tBO"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S02-Hg-h2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-654" y="-772"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ja7-mc-FaJ">
@@ -150,7 +195,7 @@
     </scenes>
     <resources>
         <image name="filemenu.and.cursorarrow" catalog="system" width="128" height="96"/>
-        <image name="link" catalog="system" width="128" height="122"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,9 +205,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

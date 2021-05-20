@@ -9,27 +9,31 @@
 /* Begin PBXBuildFile section */
 		0DB09F6226568A9E006011FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F6126568A9E006011FF /* AppDelegate.swift */; };
 		0DB09F6426568A9E006011FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F6326568A9E006011FF /* SceneDelegate.swift */; };
-		0DB09F6626568A9E006011FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F6526568A9E006011FF /* ViewController.swift */; };
 		0DB09F6926568A9E006011FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB09F6726568A9E006011FF /* Main.storyboard */; };
 		0DB09F6B26568AA0006011FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB09F6A26568AA0006011FF /* Assets.xcassets */; };
 		0DB09F6E26568AA0006011FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB09F6C26568AA0006011FF /* LaunchScreen.storyboard */; };
 		0DB09F7F26569B7D006011FF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F7E26569B7D006011FF /* FeedViewController.swift */; };
 		0DB09F8226569BE2006011FF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F8126569BE2006011FF /* ProfileViewController.swift */; };
-		0DB09F8526569DC0006011FF /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F8426569DC0006011FF /* PostViewController.swift */; };
+		0DB09F882656AAD9006011FF /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F872656AAD9006011FF /* PostViewController.swift */; };
+		0DB09F8C2656AEF4006011FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F8B2656AEF4006011FF /* ViewController.swift */; };
+		0DB09F8F2656B8B6006011FF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F8E2656B8B6006011FF /* InfoViewController.swift */; };
+		0DB09F922656BC66006011FF /* UIAllertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB09F912656BC66006011FF /* UIAllertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0DB09F5E26568A9E006011FF /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB09F6126568A9E006011FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB09F6326568A9E006011FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0DB09F6526568A9E006011FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0DB09F6826568A9E006011FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DB09F6A26568AA0006011FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DB09F6D26568AA0006011FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DB09F6F26568AA0006011FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DB09F7E26569B7D006011FF /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0DB09F8126569BE2006011FF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0DB09F8426569DC0006011FF /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		0DB09F872656AAD9006011FF /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		0DB09F8B2656AEF4006011FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DB09F8E2656B8B6006011FF /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		0DB09F912656BC66006011FF /* UIAllertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAllertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,11 @@
 			children = (
 				0DB09F6126568A9E006011FF /* AppDelegate.swift */,
 				0DB09F6326568A9E006011FF /* SceneDelegate.swift */,
-				0DB09F6526568A9E006011FF /* ViewController.swift */,
+				0DB09F872656AAD9006011FF /* PostViewController.swift */,
 				0DB09F6726568A9E006011FF /* Main.storyboard */,
-				0DB09F8426569DC0006011FF /* PostViewController.swift */,
+				0DB09F8E2656B8B6006011FF /* InfoViewController.swift */,
+				0DB09F912656BC66006011FF /* UIAllertViewController.swift */,
+				0DB09F8B2656AEF4006011FF /* ViewController.swift */,
 				0DB09F8126569BE2006011FF /* ProfileViewController.swift */,
 				0DB09F7E26569B7D006011FF /* FeedViewController.swift */,
 				0DB09F6A26568AA0006011FF /* Assets.xcassets */,
@@ -146,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB09F8526569DC0006011FF /* PostViewController.swift in Sources */,
-				0DB09F6626568A9E006011FF /* ViewController.swift in Sources */,
+				0DB09F922656BC66006011FF /* UIAllertViewController.swift in Sources */,
+				0DB09F8C2656AEF4006011FF /* ViewController.swift in Sources */,
+				0DB09F882656AAD9006011FF /* PostViewController.swift in Sources */,
 				0DB09F6226568A9E006011FF /* AppDelegate.swift in Sources */,
+				0DB09F8F2656B8B6006011FF /* InfoViewController.swift in Sources */,
 				0DB09F8226569BE2006011FF /* ProfileViewController.swift in Sources */,
 				0DB09F7F26569B7D006011FF /* FeedViewController.swift in Sources */,
 				0DB09F6426568A9E006011FF /* SceneDelegate.swift in Sources */,

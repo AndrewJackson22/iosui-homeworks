@@ -7,11 +7,28 @@
 
 import UIKit
 
-struct Post {
-    var title: String
-}
-
 class FeedViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    struct Post {
+       var title: String
+    }
+    
+    var newPost = Post(title: "Post")
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "post" else {
+            return
+        }
+        
+        guard let vc = segue.destination as? PostViewController else {
+            return
+        }
+        
+        vc.view.backgroundColor = .brown
+        vc.totalPost = newPost.title
+    }
 }
