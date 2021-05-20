@@ -11,9 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "post" else { return }
+        guard let vc = segue.destination as? PostViewController else { return }
+        vc.view.backgroundColor = .brown
+        
+    }
 
 }
 
