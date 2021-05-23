@@ -2,33 +2,29 @@
 //  FeedViewController.swift
 //  Navigation
 //
-//  Created by Андрей Михайлов on 20.05.2021.
+//  Created by Андрей Михайлов on 23.05.2021.
 //
 
 import UIKit
 
+struct Post {
+  var title: String
+}
+
 class FeedViewController: UIViewController {
     
+    var newPost = Post(title: "Hello World!")
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .gray
     }
-    
-    struct Post {
-       var title: String
-    }
-    
-    var newPost = Post(title: "Post")
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "post" else {
-            return
-        }
+        guard segue.identifier == "post" else { return }
+        guard let vc = segue.destination as? PostViewController else { return }
         
-        guard let vc = segue.destination as? PostViewController else {
-            return
-        }
+        vc.view.backgroundColor = .lightGray
+        vc.globalPost = newPost
         
-        vc.view.backgroundColor = .brown
-        vc.totalPost = newPost.title
     }
 }

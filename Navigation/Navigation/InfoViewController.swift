@@ -1,43 +1,48 @@
 //
-//  InfoViewController.swift
+//  Ш.swift
 //  Navigation
 //
-//  Created by Андрей Михайлов on 20.05.2021.
+//  Created by Андрей Михайлов on 23.05.2021.
 //
 
 import UIKit
 
 class InfoViewController: UIViewController {
     
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let vc = UIAllertViewController()
-        let error = UIAlertController(title: "Error", message: "No Post", preferredStyle: .actionSheet)
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
-            print("CANCEL")
-        })
-        let okay = UIAlertAction(title: "Ok", style: .default, handler: { _ in
-            print("Ok")
-        })
-        error.addAction(cancel)
-        error.addAction(okay)
-        
-        present(error, animated: true, completion: nil)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .magenta
+       
     }
-//    @IBAction func alertAction(_ sender: Any) {
-//        let vc = UIAllertViewController()
-//        let error = UIAlertController(title: "Error", message: "No Post", preferredStyle: .actionSheet)
-//        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
-//            print("CANCEL")
-//        })
-//        let okay = UIAlertAction(title: "Ok", style: .default, handler: { _ in
-//            print("Ok")
-//        })
-//        error.addAction(cancel)
-//        error.addAction(okay)
+    
+    @IBAction func errorTap(_ sender: Any) {
+        
+        let errorVC = UIAlertController(title: "ERROR", message: "U are seriously?", preferredStyle: .alert)
+                let okAlert = UIAlertAction(title: "OKAY", style: .default) { _ in
+                    print("OK")
+                }
+                let cancelAlert = UIAlertAction(title: "CANCEL", style: .cancel) { _ in
+                    print("Cancel")
+                }
+        
+                errorVC.addAction(okAlert)
+                errorVC.addAction(cancelAlert)
+        
+                present(errorVC, animated: true, completion: nil)
+    }
+    //
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        let errorVC = UIAlertController(title: "ERROR", message: "U are seriously?", preferredStyle: .alert)
+//        let okAlert = UIAlertAction(title: "OKAY", style: .default) { _ in
+//            print("OK")
+//        }
+//        let cancelAlert = UIAlertAction(title: "CANCEL", style: .cancel) { _ in
+//            print("Cancel")
+//        }
+//        errorVC.addAction(okAlert)
+//        errorVC.addAction(cancelAlert)
 //
-//        present(vc, animated: true, completion: nil)
+//        present(errorVC, animated: true, completion: nil)
 //    }
 }
