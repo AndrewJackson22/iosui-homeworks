@@ -30,19 +30,5 @@ class InfoViewController: UIViewController {
         
                 present(errorVC, animated: true, completion: nil)
     }
-    //
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        let errorVC = UIAlertController(title: "ERROR", message: "U are seriously?", preferredStyle: .alert)
-//        let okAlert = UIAlertAction(title: "OKAY", style: .default) { _ in
-//            print("OK")
-//        }
-//        let cancelAlert = UIAlertAction(title: "CANCEL", style: .cancel) { _ in
-//            print("Cancel")
-//        }
-//        errorVC.addAction(okAlert)
-//        errorVC.addAction(cancelAlert)
-//
-//        present(errorVC, animated: true, completion: nil)
-//    }
+   
 }
