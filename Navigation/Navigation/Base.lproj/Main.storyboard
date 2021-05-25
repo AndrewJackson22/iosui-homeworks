@@ -55,17 +55,22 @@
                     <view key="view" contentMode="scaleToFill" id="bIq-dq-sAn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbk-Fv-Hb8">
+                                <rect key="frame" x="196" y="438" width="24" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="arrowshape.zigzag.right.fill" catalog="system">
+                                    <color key="titleShadowColor" systemColor="systemGrayColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="osM-Jw-hGb" kind="show" identifier="post" id="PPu-cH-hEZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RmZ-H9-cau"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Lenta" id="byx-We-aMR">
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="iWg-fU-18Q">
-                            <imageReference key="image" image="arrowshape.turn.up.forward.fill" catalog="system" symbolScale="medium" renderingMode="original"/>
-                            <connections>
-                                <segue destination="osM-Jw-hGb" kind="show" identifier="post" id="bwt-EZ-gqf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Lenta" id="byx-We-aMR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TR-OA-loe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,7 +161,7 @@
     </scenes>
     <color key="tintColor" systemColor="labelColor"/>
     <resources>
-        <image name="arrowshape.turn.up.forward.fill" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.zigzag.right.fill" catalog="system" width="128" height="93"/>
         <image name="book" catalog="system" width="128" height="102"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
@@ -166,6 +171,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

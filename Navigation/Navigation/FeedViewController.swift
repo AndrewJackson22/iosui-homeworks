@@ -18,13 +18,12 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .gray
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "post" else { return }
-        guard let vc = segue.destination as? PostViewController else { return }
+        guard segue.identifier == "post", let viewController = segue.destination as? PostViewController else { return }
         
-        vc.view.backgroundColor = .lightGray
-        vc.globalPost = newPost
-        
+        viewController.globalPost = newPost
     }
+   
 }

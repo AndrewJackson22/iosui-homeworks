@@ -13,13 +13,10 @@ class PostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
-        title = globalPost?.title
+        view.backgroundColor = .lightGray
+        navigationItem.title = "Post"
+        navigationItem.title = globalPost?.title
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(false)
-
-        navigationItem.title = globalPost?.title
-    }
+    
 }
